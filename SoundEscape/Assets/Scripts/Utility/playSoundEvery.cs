@@ -34,7 +34,7 @@ public class playSoundEvery : MonoBehaviour {
 			}
 			else
 			{
-				Debug.Log("initial delay was passed and sound is playing regularly");
+//				Debug.Log("initial delay was passed and sound is playing regularly");
 				mySound.Play();
 				yield return new WaitForSeconds(seconds);
 			}
