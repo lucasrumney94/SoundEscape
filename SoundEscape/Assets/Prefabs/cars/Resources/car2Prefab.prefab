@@ -16,23 +16,23 @@ GameObject:
   - 54: {fileID: 5494828}
   - 114: {fileID: 11430494}
   m_Layer: 0
-  m_Name: carPrefab
+  m_Name: car2Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &159828
+--- !u!1 &122586
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 476938}
-  - 82: {fileID: 8205768}
-  - 114: {fileID: 11422758}
-  - 114: {fileID: 11419834}
+  - 4: {fileID: 468680}
+  - 82: {fileID: 8224570}
+  - 114: {fileID: 11428920}
+  - 114: {fileID: 11458092}
   m_Layer: 0
   m_Name: horn
   m_TagString: Untagged
@@ -47,20 +47,20 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.125351, y: 81.2514496, z: 97.243988}
+  m_LocalPosition: {x: 4, y: .949999988, z: 4}
   m_LocalScale: {x: 2, y: 1.5, z: 4}
   m_Children:
-  - {fileID: 476938}
+  - {fileID: 468680}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &476938
+--- !u!4 &468680
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159828}
+  m_GameObject: {fileID: 122586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 38.5626755, y: 53.5343018, z: 23.310997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 444550}
@@ -75,7 +75,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 39708c94f5bd5804092c024997159d6e, type: 2}
+  - {fileID: 2100000, guid: ab640e4e48f3f564681d7e05cb72290c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -123,12 +123,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &8205768
+--- !u!82 &8224570
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159828}
+  m_GameObject: {fileID: 122586}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24311272, guid: 1db9bdd098cb82a4fa4bac6640246053,
@@ -313,26 +313,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11419834
+--- !u!114 &11428920
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02f3afa75045d848bb4e264d5cc65e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialDelay: 2
-  min: 10
-  max: 20
---- !u!114 &11422758
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159828}
+  m_GameObject: {fileID: 122586}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 895122dcf69d06342b3a74d5b7670e1b, type: 3}
@@ -350,7 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4464093b02a76844391adbe2d72cb8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .349999994
+  speed: .360000014
 --- !u!114 &11452548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -363,6 +349,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variance: .300000012
+--- !u!114 &11458092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02f3afa75045d848bb4e264d5cc65e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialDelay: 1
+  min: 10
+  max: 20
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -377,7 +377,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 39708c94f5bd5804092c024997159d6e, type: 2}
+      objectReference: {fileID: 2100000, guid: ab640e4e48f3f564681d7e05cb72290c, type: 2}
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.y
       value: 0
@@ -489,7 +489,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed
-      value: .349999994
+      value: .360000014
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: seconds
@@ -497,7 +497,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: initialDelay
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: min

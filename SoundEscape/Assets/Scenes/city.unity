@@ -821,8 +821,9 @@ Transform:
   m_Children:
   - {fileID: 983400807}
   - {fileID: 427091231}
+  - {fileID: 757297531}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &264065978
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +851,7 @@ Transform:
   m_Children:
   - {fileID: 315680752}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &270910583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1089,7 @@ Transform:
   - {fileID: 84828152}
   - {fileID: 755516362}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &410127947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,8 +1245,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 427091231}
   - 33: {fileID: 427091235}
-  - 65: {fileID: 427091234}
-  - 23: {fileID: 427091233}
   - 114: {fileID: 427091232}
   m_Layer: 0
   m_Name: carSpawner (1)
@@ -1261,7 +1260,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427091230}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: 4.34000015, y: 2, z: 73.6399994}
+  m_LocalPosition: {x: 4.30000019, y: 1, z: 86}
   m_LocalScale: {x: 2, y: 2, z: 8}
   m_Children: []
   m_Father: {fileID: 233110035}
@@ -1277,45 +1276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5726289eed5356d4fbfd252ec3b14505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .400000006
-  lowCarDelay: 1
-  highCarDelay: 20
---- !u!23 &427091233
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 427091230}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &427091234
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 427091230}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  lowCarDelay: 3
+  highCarDelay: 7
 --- !u!33 &427091235
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1376,7 +1338,7 @@ Transform:
   - {fileID: 835576461}
   - {fileID: 1548344933}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &486922646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,6 +2540,55 @@ Transform:
   - {fileID: 1527304278}
   m_Father: {fileID: 360756814}
   m_RootOrder: 4
+--- !u!1 &757297530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 757297531}
+  - 33: {fileID: 757297535}
+  - 114: {fileID: 757297532}
+  m_Layer: 0
+  m_Name: carSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &757297531
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757297530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.1399994, y: 1, z: -86}
+  m_LocalScale: {x: 2, y: 2, z: 8}
+  m_Children: []
+  m_Father: {fileID: 233110035}
+  m_RootOrder: 2
+--- !u!114 &757297532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757297530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5726289eed5356d4fbfd252ec3b14505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowCarDelay: 10
+  highCarDelay: 40
+--- !u!33 &757297535
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757297530}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &764866074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +2865,7 @@ Transform:
   - {fileID: 832058072}
   - {fileID: 1053309823}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &818619508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,8 +3484,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 983400807}
   - 33: {fileID: 983400810}
-  - 65: {fileID: 983400809}
-  - 23: {fileID: 983400808}
   - 114: {fileID: 983400811}
   m_Layer: 0
   m_Name: carSpawner
@@ -3490,47 +3499,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 983400806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 2, z: -73.9000015}
+  m_LocalPosition: {x: -4, y: 1, z: -86}
   m_LocalScale: {x: 2, y: 2, z: 8}
   m_Children: []
   m_Father: {fileID: 233110035}
   m_RootOrder: 0
---- !u!23 &983400808
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983400806}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &983400809
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983400806}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &983400810
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3549,9 +3522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5726289eed5356d4fbfd252ec3b14505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .400000006
-  lowCarDelay: 1
-  highCarDelay: 3
+  lowCarDelay: 3
+  highCarDelay: 6
 --- !u!1 &1001061680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,6 +3830,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seconds: 45
   initialDelay: 0
+--- !u!1 &1059537874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1059537875}
+  - 33: {fileID: 1059537877}
+  - 65: {fileID: 1059537876}
+  - 114: {fileID: 1059537878}
+  m_Layer: 0
+  m_Name: West
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059537875
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059537874}
+  m_LocalRotation: {x: .500000119, y: .5, z: .5, w: .49999994}
+  m_LocalPosition: {x: -0, y: 51, z: -100}
+  m_LocalScale: {x: 104, y: 1, z: 104}
+  m_Children: []
+  m_Father: {fileID: 1305045850}
+  m_RootOrder: 0
+--- !u!65 &1059537876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059537874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1059537877
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059537874}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1059537878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059537874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51800c4640160de4dbeb38bf9742d9ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1077077502
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,6 +4828,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1259620292}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1305045849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1305045850}
+  m_Layer: 0
+  m_Name: CarDespawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1305045850
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305045849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1059537875}
+  - {fileID: 1798376426}
+  m_Father: {fileID: 1823173249}
+  m_RootOrder: 2
 --- !u!1 &1306241116
 GameObject:
   m_ObjectHideFlags: 0
@@ -5934,7 +5995,7 @@ Transform:
   - {fileID: 506705788}
   - {fileID: 1688856180}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &1571251209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6189,7 +6250,7 @@ Transform:
   - {fileID: 951332236}
   - {fileID: 2048924664}
   m_Father: {fileID: 1823173249}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1688856179
 GameObject:
   m_ObjectHideFlags: 0
@@ -6503,6 +6564,66 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782986965}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1798376425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1798376426}
+  - 33: {fileID: 1798376428}
+  - 65: {fileID: 1798376427}
+  - 114: {fileID: 1798376429}
+  m_Layer: 0
+  m_Name: East
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1798376426
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798376425}
+  m_LocalRotation: {x: .500000119, y: .5, z: .5, w: .49999994}
+  m_LocalPosition: {x: 0, y: 51, z: 100}
+  m_LocalScale: {x: 104, y: 1, z: 104}
+  m_Children: []
+  m_Father: {fileID: 1305045850}
+  m_RootOrder: 1
+--- !u!65 &1798376427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798376425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1798376428
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798376425}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1798376429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798376425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51800c4640160de4dbeb38bf9742d9ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1798840420
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,6 +6836,7 @@ Transform:
   m_Children:
   - {fileID: 1098359946}
   - {fileID: 823767575}
+  - {fileID: 1305045850}
   - {fileID: 233110035}
   - {fileID: 360756814}
   - {fileID: 1685107900}
