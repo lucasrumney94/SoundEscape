@@ -52,8 +52,12 @@ public class carSpawner : MonoBehaviour {
 	{
 		for (;;) //always
 		{
-			addCar();
-			carDelay = Random.Range(lowCarDelay, highCarDelay);
+			if (GameObject.FindGameObjectWithTag("Lighting").GetComponent<dayDetector>().day)
+			{
+				addCar();
+				if (GameObject.FindGameObjectWithTag("Lighting").GetComponent<dayDetector>().day)
+				carDelay = Random.Range(lowCarDelay, highCarDelay);
+			}
 			yield return new WaitForSeconds(carDelay);
 		}
 	}
