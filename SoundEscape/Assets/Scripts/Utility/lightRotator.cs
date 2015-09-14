@@ -4,7 +4,8 @@ using System.Collections;
 public class lightRotator : MonoBehaviour {
 	
 	public float degreePerFixedUpdate = .05f;
-	
+
+
 	// Update is called once per frame
 	void FixedUpdate () 
 	{

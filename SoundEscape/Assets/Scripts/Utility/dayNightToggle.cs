@@ -4,7 +4,8 @@ using System.Collections;
 public class dayNightToggle : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 	
 	}
 	
