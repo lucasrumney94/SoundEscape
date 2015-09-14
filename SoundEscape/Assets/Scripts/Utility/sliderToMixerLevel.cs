@@ -23,11 +23,11 @@ public class sliderToMixerLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        VolumeSliderGet = gameObject.GetComponent<Slider>().value;
-        setValue = (VolumeSliderGet - 1) * 80;
+        //VolumeSliderGet = gameObject.GetComponent<Slider>().value;
+        //setValue = (VolumeSliderGet - 1) * 80;
         //masterMixer.GetFloat(property, out currentVol);
         //Debug.Log(currentVol);
 
-        Debug.Log(masterMixer.SetFloat("TEST1", setValue));
+        //Debug.Log(masterMixer.SetFloat("TEST1", setValue));
     }
 }
