@@ -984,7 +984,7 @@ MonoBehaviour:
   initialActiveTheme: 0
   initialActiveTrack: 0
   playOnAwake: 0
-  crossfadeTime: 7
+  crossfadeTime: 200
   themes:
   - name: AwesomeTheme
     tracks:
