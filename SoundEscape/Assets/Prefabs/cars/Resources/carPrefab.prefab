@@ -47,7 +47,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.125351, y: 81.2514496, z: 97.243988}
+  m_LocalPosition: {x: 81.12535, y: 81.25145, z: 97.24399}
   m_LocalScale: {x: 2, y: 1.5, z: 4}
   m_Children:
   - {fileID: 476938}
@@ -83,8 +83,10 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -105,7 +107,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -135,10 +137,11 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 614236f49cf593f4ba5d919450352993, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .400000006
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -151,43 +154,44 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .0199999996
+    - time: 0.02
       value: 1
-      inSlope: -50.0199203
-      outSlope: -50.0199203
+      inSlope: -50.01992
+      outSlope: -50.01992
       tangentMode: 0
-    - time: .0399999991
-      value: .5
-      inSlope: -12.5049801
-      outSlope: -12.5049801
+    - time: 0.04
+      value: 0.5
+      inSlope: -12.50498
+      outSlope: -12.50498
       tangentMode: 0
-    - time: .0799999982
-      value: .25
-      inSlope: -3.12624502
-      outSlope: -3.12624502
+    - time: 0.08
+      value: 0.25
+      inSlope: -3.126245
+      outSlope: -3.126245
       tangentMode: 0
-    - time: .159999996
-      value: .125
-      inSlope: -.781561255
-      outSlope: -.781561255
+    - time: 0.16
+      value: 0.125
+      inSlope: -0.78156126
+      outSlope: -0.78156126
       tangentMode: 0
-    - time: .319999993
-      value: .0625
-      inSlope: -.195390314
-      outSlope: -.195390314
+    - time: 0.32
+      value: 0.0625
+      inSlope: -0.19539031
+      outSlope: -0.19539031
       tangentMode: 0
-    - time: .639999986
-      value: .03125
-      inSlope: -.0488475785
-      outSlope: -.0488475785
+    - time: 0.64
+      value: 0.03125
+      inSlope: -0.04884758
+      outSlope: -0.04884758
       tangentMode: 0
     - time: 1
       value: 0
-      inSlope: -.0200079754
-      outSlope: -.0200079754
+      inSlope: -0.020007975
+      outSlope: -0.020007975
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -198,6 +202,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -208,6 +213,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -218,6 +224,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &8244888
 AudioSource:
   m_ObjectHideFlags: 1
@@ -230,10 +237,11 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5087b815e52695044a446ba50d2c4176, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .349999994
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 1
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -246,43 +254,44 @@ AudioSource:
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .0199999996
+    - time: 0.02
       value: 1
-      inSlope: -50.0199203
-      outSlope: -50.0199203
+      inSlope: -50.01992
+      outSlope: -50.01992
       tangentMode: 0
-    - time: .0399999991
-      value: .5
-      inSlope: -12.5049801
-      outSlope: -12.5049801
+    - time: 0.04
+      value: 0.5
+      inSlope: -12.50498
+      outSlope: -12.50498
       tangentMode: 0
-    - time: .0799999982
-      value: .25
-      inSlope: -3.12624502
-      outSlope: -3.12624502
+    - time: 0.08
+      value: 0.25
+      inSlope: -3.126245
+      outSlope: -3.126245
       tangentMode: 0
-    - time: .159999996
-      value: .125
-      inSlope: -.781561255
-      outSlope: -.781561255
+    - time: 0.16
+      value: 0.125
+      inSlope: -0.78156126
+      outSlope: -0.78156126
       tangentMode: 0
-    - time: .319999993
-      value: .0625
-      inSlope: -.195390314
-      outSlope: -.195390314
+    - time: 0.32
+      value: 0.0625
+      inSlope: -0.19539031
+      outSlope: -0.19539031
       tangentMode: 0
-    - time: .639999986
-      value: .03125
-      inSlope: -.0488475785
-      outSlope: -.0488475785
+    - time: 0.64
+      value: 0.03125
+      inSlope: -0.04884758
+      outSlope: -0.04884758
       tangentMode: 0
     - time: 1
       value: 0
-      inSlope: -.0200079754
-      outSlope: -.0200079754
+      inSlope: -0.020007975
+      outSlope: -0.020007975
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -293,6 +302,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -303,6 +313,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -313,6 +324,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &11419834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -338,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 895122dcf69d06342b3a74d5b7670e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variance: .0500000007
+  variance: 0.05
 --- !u!114 &11430494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -350,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4464093b02a76844391adbe2d72cb8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .349999994
+  speed: 0.35
 --- !u!114 &11452548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -362,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 895122dcf69d06342b3a74d5b7670e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variance: .300000012
+  variance: 0.3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -506,6 +518,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: max
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
